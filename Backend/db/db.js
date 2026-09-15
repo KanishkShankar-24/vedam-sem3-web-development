@@ -8,7 +8,9 @@ let userSchema=  new mongoose.Schema({
         type:String,
         emun:["user",'admin'],
         default:"user"
-    }
+    },
+    resetToken: String,
+    resetTokenExpiry: Date,
 
 })
 
